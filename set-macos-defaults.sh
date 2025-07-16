@@ -20,6 +20,7 @@ echo "🔧 Setting macOS Defaults"
 # Finder Preferences
 ########################################
 
+defaults write NSGlobalDomain _HIHideMenuBar -bool true
 defaults write com.apple.finder AppleShowAllFiles -bool true
 defaults write com.apple.finder AppleShowAllExtensions -bool true
 defaults write com.apple.finder ShowStatusBar -bool true
@@ -85,6 +86,7 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write com.apple.AppleMultitouchTrackpad TrackpadAppExposeGesture -int 2
 
 # Force Click & Haptic
 defaults write com.apple.trackpad.forceClick -bool true
